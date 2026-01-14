@@ -27,8 +27,11 @@ We will use [uv](https://docs.astral.sh/uv/guides/install-python/) instead of [c
 
 The way to install packages from Github
 
-`uv pip install "git+https://github.com/user/repo.git@main"`
+`uv pip install "git+https://github.com/byuirpytooling/pypackage_template.git@main"`
 
+```bash
+uv pip install "git+https://github.com/byuirpytooling/pypackage_template.git@main"
+```
 
 ## Directory structure
 
