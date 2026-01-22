@@ -4,3 +4,5 @@
 
 
 ::: pypackage_template.add_numbers.add
+
+::: pypackage_template.add_numbers
