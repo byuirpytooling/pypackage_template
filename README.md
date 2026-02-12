@@ -15,7 +15,7 @@ These files/folders largely need to be edited to use the name of your package in
 
 ## Differences from the Python Packages book
 
-## Python Installation
+###  Python Installation
 
 We will use [uv](https://docs.astral.sh/uv/guides/install-python/) instead of [conda](https://anaconda.org/anaconda/conda).
 
@@ -35,10 +35,26 @@ We will use [uv](https://docs.astral.sh/uv/guides/install-python/) instead of [c
 2. [Guide on mkdocs-material](https://www.youtube.com/watch?v=xlABhbnNrfI) and his [companion website for this video](https://jameswillett.dev/getting-started-with-material-for-mkdocs/)
  - However, we are using `uv` and will use `uv run mkdocs new .` instead of `mkdocs new .`
 
-## Install a package from Github repository
+## Handy `uv` commands 
+
+### Install a package from Github repository
 
 ```bash
 uv pip install "git+https://github.com/byuirpytooling/pypackage_template.git@main"
+```
+
+### Installing the package in development into the Python environment 
+
+The `--editable` allows us to create an installation that points back to your project directory instead of copying the code into site-packages. With this, we can now edit the source files, and the installed package in the environment is automatically updated.
+
+```bash
+uv sync --editable
+```
+
+The above option replaces examples where you would run.
+
+```bash
+uv pip install -e .
 ```
 
 ## Directory structure
