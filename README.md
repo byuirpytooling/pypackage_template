@@ -4,9 +4,12 @@ We are following the guide from [Python Packages](https://py-pkgs.org/welcome) b
 
 ## Files to change once template is copied
 
+These files/folders largely need to be edited to use the name of your package instead of the `pypackage_template` name. The `pyproject.toml` will also need author editing.
+
 - [`tests/test_template_package.py`](https://github.com/byuirpytooling/pypackage_template/blob/main/tests/test_template_package.py)
 - [`src/pypackage_template`](https://github.com/byuirpytooling/pypackage_template/tree/main/src/pypackage_template)
 - [`src/pypackage_template/__init__.py`](https://github.com/byuirpytooling/pypackage_template/blob/main/src/pypackage_template/__init__.py)
+- [`main/pyproject.toml`](https://github.com/byuirpytooling/pypackage_template/blob/main/pyproject.toml)
 - [`mkdocs.yml`](https://github.com/byuirpytooling/pypackage_template/blob/main/mkdocs.yml)
 - [`docs/API.md`](https://github.com/byuirpytooling/pypackage_template/blob/main/docs/API.md)
 
