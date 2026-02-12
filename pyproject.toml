@@ -11,6 +11,16 @@ requires-python = ">=3.10"
 dependencies = [
     "polars==1.37.0",
 ]
+authors = [
+  { name = "J. Hathaway", email = "hathawayj@byui.edu" },
+  { name = "Co Author", email = "coauthor@example.com" }
+]
+
+# optional, if you want to distinguish current maintainers
+maintainers = [
+  { name = "Maintainer Name", email = "maintainer@example.com" }
+]
+
 
 [project.optional-dependencies]
 dev = [
