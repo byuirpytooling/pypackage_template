@@ -5,6 +5,7 @@ We are following the guide from [Python Packages](https://py-pkgs.org/welcome) b
 ## Files to change once template is copied
 
 - [`tests/test_template_package.py`](https://github.com/byuirpytooling/pypackage_template/blob/main/tests/test_template_package.py)
+- [`src/pypackage_template`](https://github.com/byuirpytooling/pypackage_template/tree/main/src/pypackage_template)
 - [`src/pypackage_template/__init__.py`](https://github.com/byuirpytooling/pypackage_template/blob/main/src/pypackage_template/__init__.py)
 - [`mkdocs.yml`](https://github.com/byuirpytooling/pypackage_template/blob/main/mkdocs.yml)
 - [`docs/API.md`](https://github.com/byuirpytooling/pypackage_template/blob/main/docs/API.md)
