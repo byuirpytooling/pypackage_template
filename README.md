@@ -26,18 +26,13 @@ We will use [uv](https://docs.astral.sh/uv/guides/install-python/) instead of [c
 3. Now you can install the two python packages recommended `uv pip install poetry cookiecutter --system`
 4. I propose skipping the PyPI setup and the rest of chapter 2 for now.
 
+## mkdocs-material
 
-## In progress notes
+1. mkdocs-material with `uv pip install mkdocs-material --system`
+2. [Guide on mkdocs-material](https://www.youtube.com/watch?v=xlABhbnNrfI) and his [companion website for this video](https://jameswillett.dev/getting-started-with-material-for-mkdocs/)
+ - However, we are using `uv` and will use `uv run mkdocs new .` instead of `mkdocs new .`
 
-- Maybe [stop using poetry and start using uv](https://github.com/mkniewallner/migrate-to-uv) or this [stackoverlow](https://stackoverflow.com/questions/79118841/how-can-i-migrate-from-poetry-to-uv-package-manager). One response recommended [uv-migrator](https://lib.rs/crates/uv-migrator)
-
-1. Also install mkdocs-material with `uv pip install mkdocs-material --system`. 
-2. You can follow [this video for a guide on mkdocs-material](https://www.youtube.com/watch?v=xlABhbnNrfI). His [companion website for this video](https://jameswillett.dev/getting-started-with-material-for-mkdocs/) will be handy as well.
-  - However, we are using `uv` and will use `uv run mkdocs new .` instead of `mkdocs new .`
-
-The way to install packages from Github
-
-`uv pip install "git+https://github.com/byuirpytooling/pypackage_template.git@main"`
+## Install a package from Github repository
 
 ```bash
 uv pip install "git+https://github.com/byuirpytooling/pypackage_template.git@main"
