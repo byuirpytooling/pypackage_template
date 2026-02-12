@@ -21,11 +21,11 @@ maintainers = [
   { name = "Maintainer Name", email = "maintainer@example.com" }
 ]
 
-
 [project.optional-dependencies]
 dev = [
     "pytest",
     "ruff",
+    { path = ".", develop = true },
 ]
 
 [project.scripts]
