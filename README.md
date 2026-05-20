@@ -4,7 +4,7 @@ We are following the guide from [Python Packages](https://py-pkgs.org/welcome) b
 
 ## Files to change once template is copied
 
-These files/folders largely need to be edited to use the name of your package instead of the `pypackage_template` name. The `pyproject.toml` will also need author editing.
+These files/folders need to be edited to use your package name instead of the `pypackage_template` name. The `pyproject.toml` will also need author editing.
 
 - [`tests/test_template_package.py`](https://github.com/byuirpytooling/pypackage_template/blob/main/tests/test_template_package.py)
 - [`src/pypackage_template`](https://github.com/byuirpytooling/pypackage_template/tree/main/src/pypackage_template)
@@ -23,11 +23,9 @@ We will use [uv](https://docs.astral.sh/uv/guides/install-python/) instead of [c
 
 1. Follow [uv's installation scripts](https://docs.astral.sh/uv/getting-started/installation/#installation-methods)
 2. Now run `uv python install --default`.
-  - You can see your available python versions with `uv python list`.
-  - If you want a specific version of python you can run `uv python install 3.12` for example.
-  - You can upgrade to the latest supported patch release for each version with `uv python upgrade`
-3. Now you can install the two python packages recommended `uv pip install poetry cookiecutter --system`
-4. I propose skipping the PyPI setup and the rest of chapter 2 for now.
+  - You can see your available Python versions with `uv python list`.
+  - If you want a specific version of Python, you can run `uv python install 3.12,` for example.
+  - You can upgrade to the latest supported patch release for each version with `uv python upgrade`.
 
 ## mkdocs-material
 
