@@ -35,12 +35,6 @@ We will use [uv](https://docs.astral.sh/uv/guides/install-python/) instead of [c
 
 ## Handy `uv` commands 
 
-### Install a package from Github repository
-
-```bash
-uv pip install "git+https://github.com/byuirpytooling/pypackage_template.git@main"
-```
-
 ### Installing the package in development into the Python environment 
 
 The `--editable` allows us to create an installation that points back to your project directory instead of copying the code into site-packages. With this, we can now edit the source files, and the installed package in the environment is automatically updated.
@@ -49,10 +43,30 @@ The `--editable` allows us to create an installation that points back to your pr
 uv sync --editable
 ```
 
-The above option replaces examples where you would run.
+With this run you can now run the following command to evaluate the package within the package specific Python that has the package installed
 
 ```bash
-uv pip install -e .
+uv run python
+```
+
+### Examining the Documentation
+
+Because of the `WATCH:` options in the `mkdocs.yml` we can now make edits to our function details and see the edits in real time with
+
+```bash
+uv run mkdocs serve
+```
+
+After you have the docs as you want you will need to build them to the `docs` folder for Github.
+
+```bash
+uv run mkdocs build
+```
+
+### Install a package from Github repository
+
+```bash
+uv pip install "git+https://github.com/byuirpytooling/simplefunctsp.git@main"
 ```
 
 ## Directory structure
