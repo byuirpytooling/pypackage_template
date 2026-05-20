@@ -27,6 +27,9 @@ theme:
       primary: blue
       accent: deep orange
 
+watch:
+  - src/pypackage_template
+
 markdown_extensions:
   - attr_list
   - pymdownx.emoji:
